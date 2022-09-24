@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Task Oriented Image/Video Compression Investigation(面向视觉任务的图像/视频压缩调研)[一]</title>
+      <link href="/2022/09/24/20220924/"/>
+      <url>/2022/09/24/20220924/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>我虽然不把我的博客定义为技术博客，而是一种用来自我倾诉具有private-public duality的talking space，不过当我把research作为近期生活的首要事务时，emmmm，talking about my life总没错吧。</p></blockquote><p>这篇文章是我研究生一年级上学期为了制作学期计划的前期努力的输出。起因是我自己给自己定了这种面向task的图像视频编解码，和supervisor交流，他也十分支持我做这个方向。之后带我的师兄让我在短期内调研这方面相关的论文，来形成对这个方向一个初步的认知，所以才有了这份论文调研报告形式的文章。所以写这篇文章的意义在于：</p><ul><li>作为一个retriever供后续科研检索使用；</li><li>记录自己research的每一个step；</li><li>供可能需要的人直接查阅使用；</li><li>再不写东西，我博客就要长草了T_T。<br>题目后加[一]意味着这样的研究报告可能不会只是这一次，我可能会持续做下去。</li></ul><h2 id="论文目录">论文目录</h2><p>这10天内所有调研的论文如下：</p><p>VCM标准与综述</p><ul><li>Task  Oriented  Video  Coding:  A  Survey</li><li>Video  Coding  for  Machines:  A  Paradigm  of  Collaborative  Compression  and  Intelligent  Analytics</li></ul><p>ICM相关论文</p><ul><li>Learning to Structure an Image With Few Colors.(20 cvpr)</li><li>Image pre-transformation for recognition-aware image compression(21 ICIP)</li><li>Visual analysis motivated rate-distortion model for image coding(21 ICME)</li><li>Learned image coding for machines: A content-adaptive approach(20 ICME)</li><li>End-to-end optimized image compression for machines, a study</li><li>Learning based Facial Image Compression with semantic fidelity metric</li><li>Image coding for machines: an end-to-end learned approach</li><li>Discernible image compression(20 ACM-MM)</li></ul><p>VCM相关论文</p><ul><li>A Novel Video Coding Strategy in HEVC for Object Detection(21 TCSVT)</li><li>3D Human Skeleton Data Compression for Action Recognition(19 VCIP)</li></ul><p>其它相关</p><ul><li>Two-Stream Convolutional Networks for Action Recognition in Videos</li><li>DVC：DVC: An End-to-end Deep Video Compression Framework</li><li>Towards Task-Generic Image Compression: A Study of Semantics-Oriented Metrics (TMM)</li><li>Semantics-to-signal scalable image compression with learned revertible representations</li></ul><p>ICM指的是Image Compression For Machine，VCM指的是Video Compression For Machine。“VCM”这个英文缩写是MPEG近期成立的一个新的标准小组，探索I/V compression for Machine。<br>关于VCM相关工作的介绍-&gt;<a href="https://zhuanlan.zhihu.com/p/378664934">传送门</a>。<a href="https://mpeg.chiariglione.org/standards/exploration/video-coding-machines">VCM Standord官网</a></p><h2 id="VCM标准与综述">VCM标准与综述</h2><p>在&quot;Video  Coding  for  Machines:  A  Paradigm  of  Collaborative  Compression  and  Intelligent  Analytics&quot;这篇论文中，VCM的组织成立者——北大某chen姓大牛组概括了VCM目前的主要几个任务：</p><ol><li>Machine vision targeted codec</li><li>Intermediate feature compression</li><li>Intermediate feature optimization</li><li>Features assisted coding</li><li>Scalable coding</li></ol><h3 id="Machine-vision-targeted-codec">Machine vision targeted codec</h3><p>这个任务是我目前想做的方向，它其实是图片/视频压缩发展到一定阶段必然会有的一种想法。拿目前端到端的图片编码为例，当前的图片编码以PSNR或者MS-SSIM作为Distortion得到衡量指标，并作为loss项参与到端到端的训练中去，使得网络能够在训练过程中减少图像压缩的像素级和分布级的失真，从而满足人类视觉的需求。但其实在当前的网络传输中，很多数据其实是从Machine To Machine的，所以能不能用Machine所需要的失真度量来优化网络呢？这也就是改任务的想法。</p><div style="width:100%;margin:auto"><img src="/2022/09/24/20220924/MVTC.JPG" class="" title="MVTC"></div><div id="under_img">MVTC任务结构</div>需要注意的是Machine vision targeted codec不一定要求的是端到端的编码结构，只要能够达到Task上的提升都算做一种方法。MVTC具体来说又可以分为三类：<ol><li>Side Information</li><li>Machine vision constraint training(End To End)</li><li>Semantic information preservation(没有做太多调研)</li></ol><p>Side Information我认为大多数是从视觉任务的网络上获得某些对视觉任务很重要的信息，作为边信息指导一个传统编码方法如Hevc，VVC等对图片/视频进行编码，与其相关的两篇论文为：</p><ul><li>A Novel Video Coding Strategy in HEVC for Object Detection(Video)</li><li>Visual analysis motivated rate-distortion model for image coding(Image)</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> Think deeper than sea. </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 学习 </tag>
+            
+            <tag> Research </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>梦想-现实-希望</title>
       <link href="/2022/06/17/20220609/"/>
       <url>/2022/06/17/20220609/</url>

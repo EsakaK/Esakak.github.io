@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://esakak.github.io/2022/09/24/20220924/</loc>
+    
+    <lastmod>2022-09-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://esakak.github.io/2022/06/17/20220609/</loc>
     
     <lastmod>2022-09-24</lastmod>
@@ -90,6 +99,13 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://esakak.github.io/tags/Research/</loc>
+    <lastmod>2022-09-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
@@ -101,6 +117,13 @@
   
   <url>
     <loc>https://esakak.github.io/categories/Think-beyond-the-sky/</loc>
+    <lastmod>2022-09-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://esakak.github.io/categories/Think-deeper-than-sea/</loc>
     <lastmod>2022-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
