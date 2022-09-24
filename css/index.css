@@ -4295,6 +4295,9 @@ h1.page-title + .tag-cloud-list {
 #article-container > :last-child {
   margin-bottom: 0 !important;
 }
+#post {
+  background: rgba(255,255,255,0.8);
+}
 #post .tag_share:after {
   display: block;
   clear: both;
